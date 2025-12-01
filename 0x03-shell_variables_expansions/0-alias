@@ -1,4 +1,2 @@
 #!/bin/bash
-# 0-alias
-# To creates an alias named 'ls' with value 'rm *'
 alias ls='rm *'
