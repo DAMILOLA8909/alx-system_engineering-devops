@@ -1,1 +1,2 @@
-echo "shtbeolhc"
+#!/bin/bash
+echo shtbeolhc
