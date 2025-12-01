@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c "w='$WATER';s='$STIR';W={'w':0,'a':1,'t':2,'e':3,'r':4};S={'s':0,'t':1,'i':2,'r':3};B='bestchol';wd=0;sd=0;[wd:=wd*5+W[c] for c in w if c in W];[sd:=sd*4+S[c] for c in s if c in S];t=wd+sd;print('b' if t==0 else ''.join(B[t//8**i%8] for i in range(t.bit_length()//3+1)[::-1]).lstrip('b') or 'b')"
+echo "$WATER$STIR" | tr 'waterstir.' 'bestcholb'
